@@ -23,3 +23,8 @@ def test_area_circulo():
 def test_area_retangulo():
     assert area_retangulo(5, 4) == 20
     assert area_retangulo(-1, 5) == "Erro: largura e altura devem ser não-negativos."
+
+def test_fixture(lista_simples):
+    assert sum(lista_simples) == 15
+    assert (lista_simples[4]) == 5
+    assert len(lista_simples) == 5

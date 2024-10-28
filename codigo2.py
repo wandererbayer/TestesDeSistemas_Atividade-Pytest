@@ -1,4 +1,10 @@
 import math
+import pytest
+
+# Fixture + Função
+@pytest.fixture # *Decorador
+def lista_simples():
+    return [1, 2, 3, 4, 5]
 
 # Funções matemáticas
 def soma(a, b):
